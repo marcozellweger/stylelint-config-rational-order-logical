@@ -1,6 +1,6 @@
 # stylelint-config-rational-order-logical
 
-
+🎉Now includes logical properties
 Stylelint config that sorts related property declarations by grouping together following the order:
 
 1.  Positioning
