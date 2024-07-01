@@ -23,6 +23,7 @@
     "stylelint-plugin",
     "properties-order",
     "css property order",
+    "css logical properties",
     "declaration-order",
     "css declaration order",
     "rational-css",
