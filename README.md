@@ -1,6 +1,6 @@
 # stylelint-config-rational-order-logical
 
-🎉Now includes logical properties
+🎉 Now includes logical properties 🎉\
 Stylelint config that sorts related property declarations by grouping together following the order:
 
 1.  Positioning
@@ -18,15 +18,28 @@ Stylelint config that sorts related property declarations by grouping together f
   right: 0;
   bottom: 0;
   left: 0;
+  inset: 0;
+  inset-block: 0;
+  inset-block-start: 0;
+  inset-block-end: 0;
+  inset-inline: 0;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
   z-index: 10;
 
   /* Box Model */
   display: block;
   float: right;
   width: 100px;
+  inline-size: 100px;
   height: 100px;
+  block-size: 100px;
   margin: 10px;
+  margin-block: 10px;
+  margin-inline: 10px;
   padding: 10px;
+  padding-block: 10px;
+  padding-inline: 10px;
 
   /* Typography */
   color: #888;
@@ -37,6 +50,8 @@ Stylelint config that sorts related property declarations by grouping together f
   /* Visual */
   background-color: #eee;
   border: 1px solid #888;
+  border-block: 1px solid #888;
+  border-inline: 1px solid #888;
   border-radius: 4px;
   opacity: 1;
 
@@ -50,12 +65,12 @@ Stylelint config that sorts related property declarations by grouping together f
 
 ## Usage
 
-1.  Add `stylelint`, `stylelint-order` and this package to your project:
+1.  Add `stylelint`, `stylelint-order`, `stylelint-use-logical-spec and this package to your project:
 
 ```bash
-npm install --save-dev stylelint stylelint-order stylelint-config-rational-order
+npm install --save-dev stylelint stylelint-order stylelint-use-logical-spec stylelint-config-rational-order
 # or, if you prefer yarn over npm:
-yarn add --dev stylelint stylelint-order stylelint-config-rational-order
+yarn add --dev stylelint stylelint-order stylelint-use-logical-spec stylelint-config-rational-order
 ```
 
 2.  Add this package to the end of your extends array inside Stylelint
@@ -65,7 +80,7 @@ yarn add --dev stylelint stylelint-order stylelint-config-rational-order
 {
   "extends": [
     // "stylelint-config-standard",
-    "stylelint-config-rational-order"
+    "stylelint-config-rational-order-logical"
   ]
 }
 ```
@@ -75,7 +90,7 @@ This shareable config contains the following:
 {
   "plugins": [
     "stylelint-order",
-    "stylelint-config-rational-order/plugin"
+    "stylelint-config-rational-order-logical/plugin"
   ],
   "rules": {
     "order/properties-order": [],
@@ -87,7 +102,7 @@ This shareable config contains the following:
 }
 ```
 
-Since it adds `stylelint-order` and `stylelint-config-rational-order` to plugins and also adds required rules, you don't have to do this yourself when extending this config.
+Since it adds `stylelint-order` and `stylelint-config-rational-order-logical` to plugins and also adds required rules, you don't have to do this yourself when extending this config.
 
 
 ## Optional options / rules
