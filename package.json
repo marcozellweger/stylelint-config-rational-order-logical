@@ -32,7 +32,7 @@
   ],
   "dependencies": {
     "stylelint": "^16.10.0",
-    "stylelint-order": "^5.0.0"
+    "stylelint-order": "^6.0.4"
   },
   "devDependencies": {
     "eslint": "^8.8.0",
